@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "python-search-path.py",
+      "pythonPath": "${workspaceFolder}/A003-virtual-env/environment-3.4/bin/python",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/python-search-path.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}
