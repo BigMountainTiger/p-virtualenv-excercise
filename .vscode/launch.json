@@ -3,10 +3,26 @@
   "configurations": [
     {
       "name": "python-search-path.py",
-      "pythonPath": "${workspaceFolder}/A003-virtual-env/environment-3.4/bin/python",
+      "pythonPath": "${workspaceFolder}/environment-3.4/bin/python",
       "type": "python",
       "request": "launch",
       "program": "${workspaceFolder}/python-search-path.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "python-inspect-path.py",
+      "pythonPath": "${workspaceFolder}/environment-3.4/bin/python",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/python-inspect-path.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "python-flask-api.py",
+      "pythonPath": "${workspaceFolder}/environment-3.4/bin/python",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/python-flask-api.py",
       "console": "integratedTerminal"
     }
   ]
