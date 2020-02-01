@@ -1,3 +1,4 @@
+import sys
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
@@ -10,5 +11,9 @@ def message():
     email = 'song.li@email.com',
   )
 
+port = 3000
+if len(sys.argv) > 1:
+  port = sys.argv[1]
+
 if __name__ == '__main__':
-   app.run(host='0.0.0.0', port=3000)
+   app.run(host='0.0.0.0', port=port)
