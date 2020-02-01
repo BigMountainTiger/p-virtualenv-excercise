@@ -1,7 +1,11 @@
-import sys
+import sys, os
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
+
+port = 3000
+if len(sys.argv) > 1:
+  port = int(sys.argv[1])
 
 @app.route('/')
 def message():
@@ -9,11 +13,9 @@ def message():
   return jsonify(
     username = name,
     email = 'song.li@email.com',
+    pid = os.getpid(),
+    port = port
   )
-
-port = 3000
-if len(sys.argv) > 1:
-  port = sys.argv[1]
 
 if __name__ == '__main__':
    app.run(host='0.0.0.0', port=port)
